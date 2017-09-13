@@ -41,11 +41,14 @@ print(moreFun)
 listA = [1,2,3]
 listB = [2,3,4]
 mult = []
-for x in listA:
-    for y in listB:
-        z = x * y
-        mult.append(z)
+for i in range(0, len(listA)):
+    mult.append(listA[i]* listB[i])
+
 print(mult)
+
+# another possible solution
+# for i, num1 in enumerate(m1):
+#   answer.append(num1 * m2[i])
 
 #9 Matris Addition
 a = [ [1, 3], [2, 4] ]
