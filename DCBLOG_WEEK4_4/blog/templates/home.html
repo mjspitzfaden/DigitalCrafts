@@ -1,0 +1,15 @@
+
+<ul>
+  {% for post in posts %}
+  <li>
+    <p>This has been called </p>
+    <a href="/post/{{ post.slug }}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<div>
+  <button><a href="/post">Create Post</a></button>
+  <button><a href="/author">View all of the author's articales</a></button>
+  <button><a href="/authors">List authors</a></button>
