@@ -32,20 +32,15 @@ class BlogPost (BaseModel):
   created = peewee.DateTimeField(
               default=datetime.datetime.utcnow)
 
-  def html(self):
-    return markdown2.markdown(self.body)
 
   def __str__ (self):
     return self.title
 
 class Comment (BaseModel):
-  author = peewee.ForeignKeyField(Author, null=True)
+  blog_post = peewee.ForeignKeyField(BlogPost, null=True)
   comment = peewee.TextField()
   created = peewee.DateTimeField(
               default=datetime.datetime.utcnow)
-
-  def html(self):
-    return markdown2.markdown(self.body)
 
   def __str__ (self):
     return self.author

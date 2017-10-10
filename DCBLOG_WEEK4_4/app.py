@@ -32,17 +32,32 @@ class PostHandler(TemplateHandler):
 
 class CommentHandler(TemplateHandler):
   def post (self, slug):
-    print('***** BEFORE******')
-    comment = self.get_body_argument('comment')
-    print("**AFTER****")
-    post = BlogPost.select()\
-      .where(BlogPost.slug == slug).get()
-    # Save Comment Here
+    comment_parameter = self.get_body_argument('comment')
+    post = BlogPost.select().where(BlogPost.slug == slug).get()
+    #Save Comment Here
+    #Comment.create(comment = comment_parameter).where(comment.blog_slug = post.slug)
+    #Comment.create(comment_parameter).where(Comment.blog_post_id_id = post.id)
+    #Comment.update(comment)
+    #comment = Comment.create(comment = comment_parameter)
+
+    comment = Comment.create(blog_post_id = post.id, comment = comment_parameter)
+    #.where(Comment.blog_post_id_id = post.id)
+    comment.save()
     self.redirect('/post/' + slug)
+
+class AuthorsHandler(TemplateHandler):
+  def get (self):
+        # get all authors from database
+
+        # needs to be assigned from database
+    authors = Author.select(Author.name)
+    self.render_template('authors.html', {'authors': authors})
+
 
 def make_app():
   return tornado.web.Application([
     (r"/", MainHandler),
+    (r"/authors.html", AuthorsHandler),
     (r"/post/(.*)/comment", CommentHandler),
     (r"/post/(.*)", PostHandler),
     (r"/static/(.*)",
