@@ -24,3 +24,16 @@ jordan.greet(sonny);
 
 
 console.log('Jordan contact info:' + jordan.email + ' and ' + jordan.phone);
+
+
+/* Create a constructor card example */
+
+function card(point, suit) {
+  this.point = point;
+  this.suit = suit;
+}
+
+var theCard = new card(5, 'diamonds');
+
+console.log(theCard.point);
+console.log(theCard.suit);
