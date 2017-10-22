@@ -27,13 +27,71 @@ console.log('Jordan contact info:' + jordan.email + ' and ' + jordan.phone);
 
 
 /* Create a constructor card example */
+class Card {
+  constructor(point, suit, image) {
+    this.point = point;
+    this.suit = suit;
+    this.image = image;
 
-function card(point, suit) {
-  this.point = point;
-  this.suit = suit;
+  }
 }
 
-var theCard = new card(5, 'diamonds');
 
-console.log(theCard.point);
-console.log(theCard.suit);
+var theCard5 = new Card(5, 'diamonds', "image");
+var theCard6 = new Card(6, 'diamonds', 'img');
+
+console.log(theCard5.point);
+console.log(theCard5.suit);
+console.log(theCard5.image);
+
+
+class hand {
+  constructor(hand) {
+  this.hand = [];
+}
+  addCard(card){
+    this.hand.push(card);
+
+  }
+  getPoints(){
+    var points = 0;
+
+    //length = length + 1;
+    for (var i = 0; i < this.hand.length; i++) {
+        points += this.hand[i].point;
+  }
+}
+}
+
+
+class deck {
+  constructor(card) {
+  this.deck = [];
+}
+getCard(){
+thecard = new card();
+thecard = this.deck.pop();
+return thecard;
+}
+
+shuffle(){
+
+  for (var i = this.deck.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = this.deck[i];
+      this.deck[i] = this.deck[j];
+      this.deck[j] = temp;
+  }
+  return array;
+
+}
+
+
+
+}
+
+var dealerhand = new hand();
+var playerhand =  new hand();
+
+//dealerHand.hand.push(theCard5)
+//playerHand.push(theCard6)
