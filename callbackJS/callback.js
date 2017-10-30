@@ -45,11 +45,11 @@ function greeting (person, callback){
 }
 
 function product (numbers, callback){
-
-  callback(numbers.reduce(function(a, b, answer){
-    var answer a * b;
-  }))
-}
+  callback(numbers.reduce(function(a, b){
+    return a * b;
+  },1);
+)
+});
 
 add(4, 6, function (result) { console.log(result); });
 console.log("hey");
@@ -61,3 +61,5 @@ console.log("two");
 Bob = new Person();
 Bob.name = "Bob";
 greeting(Bob, function (gre) { console.log(gre);});
+array = [1,2,3,4];
+product(array, function (red) {console.log(red);});

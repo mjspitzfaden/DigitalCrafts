@@ -41,5 +41,3 @@ rl.question("Enter web page url ", function(url){
     });
   });
 });
-
-/
