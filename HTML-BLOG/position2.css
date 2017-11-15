@@ -1,0 +1,24 @@
+
+.box1 {
+  background-color: blue;
+  position:absolute;
+  width: 20%;
+  height: 100%;
+
+
+}
+.box2 {
+  background-color: orange;
+  position: absolute;
+  margin: 0 0 0 9.5em;
+  width: 60%;
+  height: 100%
+}
+
+.box3 {
+  background-color: black;
+  position: absolute;
+  margin: 0 0 0 43em;
+  width: 20%;
+  height: 100%
+}

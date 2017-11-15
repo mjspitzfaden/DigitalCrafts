@@ -1,0 +1,75 @@
+
+.box1 {
+  background-color: blue;
+  position:absolute;
+  width: 33.3%;
+  height: 33.3%;
+
+
+}
+.box2 {
+  background-color: orange;
+  position: absolute;
+  margin: 0 0 0 19em;
+  width: 33.3%;
+  height: 33.3%
+}
+
+.box3 {
+  background-color: black;
+  position: absolute;
+  margin: 0 0 0 38em;
+  width: 33.3%;
+  height: 33.3%
+}
+
+.box4 {
+  background-color: black;
+  position:absolute;
+  margin: 18em 0 0 0;
+  width: 33.3%;
+  height: 33.3%;
+
+
+}
+.box5 {
+  background-color: blue;
+  position: absolute;
+  margin: 18em 0 0 19em;
+  width: 33.3%;
+  height: 33.3%
+}
+
+.box6 {
+  background-color: orange;
+  position: absolute;
+  margin: 18em 0 0 38em;
+  width: 33.3%;
+  height: 33.3%
+}
+
+
+.box7 {
+  background-color: blue;
+  margin: 36em 0 0 0;
+  position:absolute;
+  width: 33.3%;
+  height: 33.3%;
+
+
+}
+.box8 {
+  background-color: orange;
+  position: absolute;
+  margin: 36em 0 0 19em;
+  width: 33.3%;
+  height: 33.3%
+}
+
+.box9 {
+  background-color: black;
+  position: absolute;
+  margin: 36em 0 0 38em;
+  width: 33.3%;
+  height: 33.3%
+}

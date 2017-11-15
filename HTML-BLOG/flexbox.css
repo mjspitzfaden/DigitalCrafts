@@ -1,0 +1,51 @@
+
+
+.head {
+  background-color: blue;
+  height: 100px;
+  /*display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1*/
+}
+.col1 {
+  background-color: orange;
+  width: 50%;
+  min-height: 50vw;
+
+
+}
+
+#vertical {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  align-content: flex-end;
+  flex-grow: 1
+  flex: auto;
+  }
+
+.col2 {
+  background-color: green;
+  width: 50%;
+  min-height: 50vh;
+
+}
+
+  .foot1 {
+    background-color: red;
+    height: 100px;
+    /*display: flex;
+    flex-flow: column nowrap;*/
+  }
+
+
+
+
+
+}
+
+.foot1 {
+background-color: red;
+
+
+}

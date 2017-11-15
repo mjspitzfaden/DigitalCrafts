@@ -1,0 +1,54 @@
+
+
+h5 {
+  margin-left: 30em;
+  color: gray
+}
+
+h1 {
+  text-align: left;
+  margin-left: 3.5em;
+}
+
+p {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 5.7em;
+}
+
+.one {
+    margin-left: 6.7em;
+
+}
+
+.expand {
+    margin-left: 6.7em;
+    width: 630px;
+
+}
+
+.two {
+    margin-left: 6em;
+
+}
+
+.three {
+    margin-left: 6em;
+
+}
+
+
+
+.four {
+    margin-left: 5.7em;
+
+}
+
+.five {
+    margin-left: 6em;
+
+}
+
+div {
+  position: static;
+}

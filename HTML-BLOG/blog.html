@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TJ holowaychuk blog</title>
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <img class = "one" src="topSS.png" alt="top screen shot 123"><br />
+      <h1><strong>Introducing Apex Ping</strong></h1>
+      <p>I'd like to introduce <strong><u>ApexPing</strong></u>! A minimalistic, but powerful uptime & <br>
+      performance monitoring service for websights and APIs. In this post I'll cover<br>
+      features of Apex Ping, why I chose to build it first, and a few things I learned<br>
+      in the process. In future posts I;ll be detailing the implenmentation for anyone<br>
+      who is curious. <br> <br>
+      I softplauched Ping about a month ago, built almost 100% on AWS Lambda,<br>
+      with 500 users it has already detected over a million errors, and performed<br>
+      over 25 million checks. Big thanks to the early adopters who have checked it<br>
+      out!<br><br></p>
+      <img class = "expand" src="tj_blog_img1.png" alt="graph 1"><br><br>
+      <h5><strong>.  &nbsp &nbsp . &nbsp &nbsp  .</strong></h5><br>
+      <h1><strong>The product</strong></h1>
+      <p>I've seen first hand how embarrassing it can be when customers find out<br>
+      your product is having issues before you do, naturally this can translate to<br>
+      customs  bailing on your product. Ensuring your site, app, or API is stable<br>
+      and performat is critical.<br><br></p>
+      <h1><strong>Powerful monitoring</strong></h1>
+      <p>Unlike some other uptime monitoring services, which only support<br>
+      requests, Ape Ping support header fields and bodies as well. This allows<br>
+      you to test APIs, cashing behavior, and serving time, as well as the typical<br>
+      connection latency.<br><br>
+      The check listing displays the uptime, mean responce, Apdex score, and<br>
+      Adpex score throughtout the day, week, or month. The <u>Apdex</u> score<br>
+      generalies the user experience, summarizing responce time satisfaction and<br>
+      error responces.<br><br>
+      </p>
+      <img class = "two" src="tj_blog_img2.png" alt="graph 2"><br />
+      <h5>Checks overview</h5><br>
+      <h1><strong>Global checks</strong></h1>
+      <p>Requests of "checks" are peformed from a number of selectable PoPs (Point<br>
+      of Presene), giving you a glace at the customer experiece all over the<br>
+      world. Hovering a PoP provides you with the breakdown, and coloring<br>
+      indicates their relative health so you can instantly see if a region's<br>
+      availability or [performance is degraded.<br>
+    </p>
+     <img class = "three" src="tj_blog_img3.png" alt="graph 3"><br />
+     <h5>Geographical view</h5><br>
+     <h1><strong>Latency distributation</strong></h1>
+     <p>When lancy is reflection of the user-experience, it's important not to<br>
+      ignore the outliers. The Latency view provides you with an intuitive look at<br>
+      distribution throught the selected time period, where the intensity of the<br>
+      heatmap repesents the number of check's within the given duration.<br><br>
+    </p>
+      <img class = "four" src="tj_blog_img4.png" alt="graph 4"><br />
+      <h5>Latency heatmap</h5><br>
+      <h1><strong>Errors & Apdex</strong></h1>
+      <p>The <u>Apdex</u> (Application Performace Index) score quantifies the user-<br>
+      experience based on a configured target latency. It effectively lets you know<br>
+      how far you are from hitting your mark, you should strive for a perfect 1.0!<br><br>
+    </p>
+    <img class = "five" src="tj_blog_img5.png" alt="graph 4"><br />
+
+
+    </div>
+    </body>
+<html>

@@ -1,0 +1,37 @@
+.modal-dialog {
+margin: 21em 33em 0 26em;
+position: absolute;
+padding: 12px;
+border: 7px solid;
+width: 347px;
+
+
+}
+
+.modal-title {
+background-color: gray;
+margin: 0 0 0 -17em;
+/*width: 100%;
+height: 150%;*/
+padding-right: 277px;
+padding-left: 9px;
+padding-top: 12px'
+
+}
+
+.modal-header {
+margin: 0 0 0 17em;
+background-color: gray;
+font-size: 30px;
+color: white;
+
+
+
+}
+
+.modal-buttons {
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0 0 0 17em;
+}
