@@ -1,10 +1,10 @@
-/* 
-========================================= 
-========================================= 
+/*
+=========================================
+=========================================
 
-Under construction template by Bootstrapious.com     
+Under construction template by Bootstrapious.com
 
-========================================= 
+=========================================
 ========================================= */
 /* variant 4 - red */
 /*
@@ -196,7 +196,7 @@ fieldset[disabled] .btn-white.active {
   min-height: 100vh;
   height: 100vh;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .intro {
     height: auto;
     min-height: 100vh;
@@ -209,14 +209,14 @@ fieldset[disabled] .btn-white.active {
 .intro-left-content {
   padding: 20px 10px;
 }
-@media (min-width: 767px) {
+/*@media (min-width: 767px) {
   .intro-left-content {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     padding: 80px;
   }
-}
+}*/
 @media (max-width: 991px) {
   .intro-left-content h1 {
     font-size: 30px;

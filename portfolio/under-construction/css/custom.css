@@ -1,1 +1,30 @@
 /* your styles go here */
+
+.icons{
+  text-align-last: center;
+}
+
+.Linkedin{
+  height: auto;
+  width: 15%;
+  max-width: 300px;
+  max-height: 300px;
+  color:white;
+
+}
+
+.github{
+  height: auto;
+  width: 15%;
+  max-width: 300px;
+  max-height: 300px;
+    color:white;
+}
+
+.resume{
+  height: auto;
+  width: 15%;
+  max-width: 300px;
+  max-height: 300px;
+    color:white;
+}
